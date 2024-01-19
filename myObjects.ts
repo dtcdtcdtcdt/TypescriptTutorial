@@ -11,10 +11,39 @@ function createCourse():{name: string, price: number} {
 }
 
 
+// type User = {
+//     name: string;
+//     email: string;
+//     isActive: boolean
+// }
+
+// function createUserV2(user: User): User {
+//     return {name: "", email: "", isActive: true}
+// }
+
 type User = {
+    readonly id: string
     name: string;
     email: string;
     isActive: boolean
+    creditCardDetails?: number
 }
 
-function createUserV2(user: User){}
+let myUser: User = {
+    id: "1234",
+    name: "",
+    email: "",
+    isActive: false
+}
+
+type cardNumber = {
+    cardnumber: string
+}
+
+type cardDate = {
+    cardDate: string
+}
+
+type cardDetails = cardNumber & cardDate & {
+    cvv: number
+}
