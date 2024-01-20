@@ -9,5 +9,4 @@ enum SeatChoice {
     FOURTH = 0
 }
 
-let seat: number = 0;
-
+const danielSeat = SeatChoice.AISLE
